@@ -89,12 +89,14 @@ class TapCatcher: UIView {
     
     
     
-    // Use code below in point() fuction to increase tap area of UIView by declared below offsets for each side
-    // func point() calculates, whether touch was inside of the view bounding box or not
+    
+    // func point() calculates, whether touch was inside of the view's bounding box or not
     // func hitTest() checks, from root layer(farthes from touch), checks up recursivley, on the same layer from bottom to the top, moving deeply in each child view, to determine, which of views that point() fuction 'marked' as the ones that are eligible for touch, which one of them is the closest to the screen and therefore eligible for touch
     // if 2 views are eligible for touch and will be on the same layer, the most bottom view will be in priority since this view is rendered above the second view (second view will be rendered on the back of the first view and in calculatins will be considered as the one on the back)
     // by the way also it consideres the most bottom views first because this approach is more effiient (takes less calculations)
+    // also note: hitTest() -> you can return self of view so clicks will always fall into that view and ignore child views
     
+    // Use code below in point() fuction to increase tap area of UIView by declared below offsets for each side
 //    let touchOffset = CGPoint(x: 50, y: 50)
 //    override func point(inside point: CGPoint, with event: UIEvent?) -> Bool {
 //        return bounds.insetBy(dx: -touchOffset.x, dy: -touchOffset.y).contains(point)

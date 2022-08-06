@@ -24,6 +24,11 @@
                                         <rect key="frame" x="211" y="40" width="123" height="235"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxY="YES"/>
                                         <subviews>
+                                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="c7V-nm-r7q" customClass="TapCatcher" customModule="UIResponderChain" customModuleProvider="target">
+                                                <rect key="frame" x="18" y="43" width="87" height="119"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxY="YES"/>
+                                                <color key="backgroundColor" systemColor="systemPurpleColor"/>
+                                            </view>
                                             <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="E3h-Kd-887" customClass="TapCatcher" customModule="UIResponderChain" customModuleProvider="target">
                                                 <rect key="frame" x="17" y="17" width="87" height="89"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxY="YES"/>
@@ -33,11 +38,6 @@
                                                 <rect key="frame" x="17" y="127" width="87" height="89"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxY="YES"/>
                                                 <color key="backgroundColor" systemColor="systemTealColor"/>
-                                            </view>
-                                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="c7V-nm-r7q" customClass="TapCatcher" customModule="UIResponderChain" customModuleProvider="target">
-                                                <rect key="frame" x="18" y="43" width="87" height="119"/>
-                                                <autoresizingMask key="autoresizingMask" flexibleMaxY="YES"/>
-                                                <color key="backgroundColor" systemColor="systemPurpleColor"/>
                                             </view>
                                         </subviews>
                                         <color key="backgroundColor" systemColor="systemGreenColor"/>
