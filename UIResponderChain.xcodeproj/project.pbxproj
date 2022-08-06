@@ -9,7 +9,7 @@
 /* Begin PBXBuildFile section */
 		5261972E289EB39E008A35E5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5261972D289EB39E008A35E5 /* AppDelegate.swift */; };
 		52619730289EB39E008A35E5 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5261972F289EB39E008A35E5 /* SceneDelegate.swift */; };
-		52619732289EB39E008A35E5 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52619731289EB39E008A35E5 /* ViewController.swift */; };
+		52619732289EB39E008A35E5 /* ResponderChainFirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52619731289EB39E008A35E5 /* ResponderChainFirstViewController.swift */; };
 		52619735289EB39E008A35E5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 52619733289EB39E008A35E5 /* Main.storyboard */; };
 		52619737289EB3A0008A35E5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 52619736289EB3A0008A35E5 /* Assets.xcassets */; };
 		5261973A289EB3A0008A35E5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 52619738289EB3A0008A35E5 /* LaunchScreen.storyboard */; };
@@ -20,7 +20,7 @@
 		5261972A289EB39E008A35E5 /* UIResponderChain.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = UIResponderChain.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5261972D289EB39E008A35E5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		5261972F289EB39E008A35E5 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		52619731289EB39E008A35E5 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		52619731289EB39E008A35E5 /* ResponderChainFirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResponderChainFirstViewController.swift; sourceTree = "<group>"; };
 		52619734289EB39E008A35E5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		52619736289EB3A0008A35E5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		52619739289EB3A0008A35E5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -58,10 +58,10 @@
 		5261972C289EB39E008A35E5 /* UIResponderChain */ = {
 			isa = PBXGroup;
 			children = (
+				52619744289F293D008A35E5 /* Topics */,
 				52619741289EC3B6008A35E5 /* CustomViews */,
 				5261972D289EB39E008A35E5 /* AppDelegate.swift */,
 				5261972F289EB39E008A35E5 /* SceneDelegate.swift */,
-				52619731289EB39E008A35E5 /* ViewController.swift */,
 				52619733289EB39E008A35E5 /* Main.storyboard */,
 				52619736289EB3A0008A35E5 /* Assets.xcassets */,
 				52619738289EB3A0008A35E5 /* LaunchScreen.storyboard */,
@@ -73,9 +73,33 @@
 		52619741289EC3B6008A35E5 /* CustomViews */ = {
 			isa = PBXGroup;
 			children = (
-				52619742289EC3CD008A35E5 /* TapCatcher.swift */,
 			);
 			path = CustomViews;
+			sourceTree = "<group>";
+		};
+		52619744289F293D008A35E5 /* Topics */ = {
+			isa = PBXGroup;
+			children = (
+				52619745289F294E008A35E5 /* HitTests */,
+				52619746289F2978008A35E5 /* UIResponderChain */,
+			);
+			path = Topics;
+			sourceTree = "<group>";
+		};
+		52619745289F294E008A35E5 /* HitTests */ = {
+			isa = PBXGroup;
+			children = (
+				52619742289EC3CD008A35E5 /* TapCatcher.swift */,
+			);
+			path = HitTests;
+			sourceTree = "<group>";
+		};
+		52619746289F2978008A35E5 /* UIResponderChain */ = {
+			isa = PBXGroup;
+			children = (
+				52619731289EB39E008A35E5 /* ResponderChainFirstViewController.swift */,
+			);
+			path = UIResponderChain;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -149,7 +173,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				52619732289EB39E008A35E5 /* ViewController.swift in Sources */,
+				52619732289EB39E008A35E5 /* ResponderChainFirstViewController.swift in Sources */,
 				5261972E289EB39E008A35E5 /* AppDelegate.swift in Sources */,
 				52619743289EC3CD008A35E5 /* TapCatcher.swift in Sources */,
 				52619730289EB39E008A35E5 /* SceneDelegate.swift in Sources */,
