@@ -79,7 +79,7 @@
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxY="YES"/>
                                                 <subviews>
                                                     <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="RVP-9E-sEY" customClass="TapCatcher" customModule="UIResponderChain" customModuleProvider="target">
-                                                        <rect key="frame" x="18" y="19" width="50" height="51"/>
+                                                        <rect key="frame" x="18" y="5" width="51" height="65"/>
                                                         <autoresizingMask key="autoresizingMask" flexibleMaxY="YES"/>
                                                         <color key="backgroundColor" systemColor="systemPinkColor"/>
                                                     </view>
@@ -104,7 +104,7 @@
                                         <autoresizingMask key="autoresizingMask" flexibleMaxY="YES"/>
                                         <subviews>
                                             <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="NME-ax-Ihx" customClass="TapCatcher" customModule="UIResponderChain" customModuleProvider="target">
-                                                <rect key="frame" x="20" y="28" width="87" height="89"/>
+                                                <rect key="frame" x="20" y="49" width="295" height="68"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxY="YES"/>
                                                 <color key="backgroundColor" systemColor="systemOrangeColor"/>
                                             </view>
