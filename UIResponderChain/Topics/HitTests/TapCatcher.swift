@@ -13,6 +13,11 @@ import UIKit
 // https://developer.apple.com/documentation/uikit/uiview/1622469-hittest
 
 //  Useful https://stackoverflow.com/questions/4961386/event-handling-for-ios-how-hittestwithevent-and-pointinsidewithevent-are-r
+
+// Good video about pattern
+// https://www.youtube.com/watch?v=le7tzeqN908&t=291s&ab_channel=SwiftArcade
+
+
 class TapCatcher: UIView {
     
     var colors: [UIColor] = {
@@ -96,7 +101,7 @@ class TapCatcher: UIView {
     }
     
     // touches began travells through views.
-    // View (and other views, from top to bottom)-> UIViewController -> UIWindow -> AppDelegate
+    // View (and other views, from top to bottom)-> UIViewController -> UIWindow -> UIApplication? -> AppDelegate
     // to the final view via UI Responder Chain pattern
     // the same thing with touches ended (also travells through views hierarchy), however, there's a time limit for user to lift up touch before tap gets discarded
     // however, this thing is not related to hitTest(), point() and tapGestureRecognizer. Commenting out super.touchesBegan() will stop call-flow of this event down the views hierarchy. All the affected views(by hit tests apparently) wil have this method called
@@ -118,6 +123,13 @@ class TapCatcher: UIView {
 //        super.touchesBegan(touches, with: event)
 //    }
 //}
+
+extension UIApplication {
+    open override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
+        print("UIApplication.touchesBegan()")
+        super.touchesBegan(touches, with: event)
+    }
+}
 
 extension UIWindow {
     open override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {

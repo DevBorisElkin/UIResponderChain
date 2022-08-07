@@ -35,7 +35,11 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         print("AppDelegate.touchesBegan()")
         super.touchesBegan(touches, with: event)
     }
+}
 
-
+extension AppDelegate: ResponderAction{
+    @objc func fetchColor(sender: Any) {
+        print("AppDelegate.-> Caught fetchColor call")
+    }
 }
 
